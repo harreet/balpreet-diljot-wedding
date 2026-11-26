@@ -1,1 +1,0 @@
-# balpreet-diljot-wedding

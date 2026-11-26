@@ -53,15 +53,15 @@ canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-in
 .slide:before{content:"";position:absolute;inset:0;background:conic-gradient(from 195deg at 50% -8%,transparent,rgba(255,230,170,.16) 8deg,transparent 26deg,rgba(255,230,170,.1) 42deg,transparent 60deg)}
 .ch1{background:radial-gradient(circle at 50% 70%,#9a5a20,#2a150a 55%,#0d0705)}
 .ch2{background:radial-gradient(circle at 50% 25%,#d9a21c,#6b4c0a 50%,#241903)}
-.ch3{background:radial-gradient(circle at 30% 30%,#127a5c,#073a2d 55%,#031410)}
-.ch4{background:radial-gradient(circle at 50% 65%,#8e1c33,#3a0a17 55%,#12040a)}
-.ch5{background:radial-gradient(circle at 50% 20%,#c9b07a,#5d4e30 50%,#1c170d)}
-.ch6{background:radial-gradient(circle at 50% 25%,#c79a8c,#5c4440 50%,#1d1514)}
+.ch3{background:radial-gradient(circle at 30% 30%,#b0405e,#5c1230 55%,#1e0511)}
+.ch4{background:radial-gradient(circle at 50% 65%,#2f8f4e,#0f4a26 55%,#04170b)}
+.ch5{background:radial-gradient(circle at 50% 20%,#e8bcc5,#a8707f 50%,#3d2229)}
+.ch6{background:radial-gradient(circle at 50% 25%,#6b5320,#141008 55%,#000)}
 .fin{background:radial-gradient(circle at 50% 40%,#4a3a24,#120d08 70%)}
 .panel{position:relative;width:100%;padding:34px 24px;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;
-background:linear-gradient(160deg,rgba(255,255,255,.15),rgba(255,255,255,.03));border:1px solid rgba(243,226,179,.4);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+background:linear-gradient(160deg,rgba(20,12,6,.78),rgba(10,6,3,.7));border:1px solid rgba(243,226,179,.4);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
 box-shadow:0 30px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.3);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s ease-out}
-.paper{background:linear-gradient(160deg,#fffaf0,#efe2c4);color:#5a4727;border:0;backdrop-filter:none;box-shadow:0 30px 60px rgba(0,0,0,.55),inset 0 0 0 8px #f7edd6,inset 0 0 0 9px rgba(185,143,60,.75);padding:48px 28px}
+.paper{background:linear-gradient(160deg,#fffaf0,#efe2c4);color:#3a2b14;border:0;backdrop-filter:none;box-shadow:0 30px 60px rgba(0,0,0,.55),inset 0 0 0 8px #f7edd6,inset 0 0 0 9px rgba(185,143,60,.75);padding:48px 28px}
 .paper:before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--noise);opacity:.35;mix-blend-mode:multiply;pointer-events:none}
 .paper:after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.7),transparent 55%);mix-blend-mode:soft-light;pointer-events:none}
 .panel>*{opacity:0;transform:translateY(14px);transition:opacity 1s,transform 1s}
@@ -69,13 +69,13 @@ box-shadow:0 30px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.3);transfo
 .act .panel>:nth-child(2){transition-delay:.5s}.act .panel>:nth-child(3){transition-delay:.9s}.act .panel>:nth-child(4){transition-delay:1.3s}.act .panel>:nth-child(5){transition-delay:1.7s}.act .panel>:nth-child(6){transition-delay:2.1s}
 .foil{background:linear-gradient(100deg,#8a6420,#f6e3a1 28%,#b98f3c 48%,#fff0b8 68%,#8a6420);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite;filter:drop-shadow(0 1px 0 rgba(0,0,0,.3))}
 @keyframes shine{to{background-position:-220% 0}}
-.small{font-size:19px;font-style:italic;line-height:1.6}
+.small{font-size:21px;font-weight:600;font-style:italic;line-height:1.6}
 .names{font-family:var(--script);font-size:46px;line-height:1.2;margin:6px 0}
 .amp{font-family:var(--script);font-size:32px;color:#b98f3c}
-.when{letter-spacing:.2em;font-size:13px;text-transform:uppercase;color:var(--gold2);margin-top:10px}
+.when{letter-spacing:.2em;font-size:15px;font-weight:600;text-transform:uppercase;color:#fff0c0;margin-top:10px}
 h2{font-weight:600;font-size:30px;letter-spacing:.12em;margin:14px 0 8px;text-transform:uppercase}
-.tag{font-style:italic;font-size:21px;color:var(--ivory)}.loc{display:block;margin-top:14px;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);font-style:normal}.fun{display:block;margin-top:10px;font-size:17px;color:var(--gold)}.map{display:inline-block;margin-top:14px;padding:8px 18px;border:1px solid var(--gold);border-radius:2px;color:var(--gold2);font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;font-style:normal}
-.rule{width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:6px 0 12px}
+.tag{font-style:italic;font-size:23px;color:#fff;line-height:1.4}.loc{display:block;margin-top:14px;font-size:16px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);font-style:normal}.fun{display:block;margin-top:10px;font-size:19px;color:#f6dc94}.map{display:inline-block;margin-top:18px;padding:13px 26px;border:1px solid #fff0c0;border-radius:30px;background:linear-gradient(135deg,#8d6b2a,#f3e2b3 50%,#b98f3c);color:#2a1d08;font-size:15px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;font-style:normal;text-shadow:none;box-shadow:0 6px 20px rgba(0,0,0,.5),0 0 22px rgba(243,226,179,.45);animation:nudge 2s ease-in-out infinite}.map:before{content:"📍 "}
+.when,.tag,.loc,.fun{text-shadow:0 1px 8px rgba(0,0,0,.85)}.rule{width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:6px 0 12px}
 .em{width:112px;height:86px;filter:drop-shadow(0 0 14px rgba(255,220,140,.55))}
 #dots{position:absolute;bottom:calc(20px + env(safe-area-inset-bottom));left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:9;opacity:0;transition:opacity 1s}
 #nav{position:absolute;bottom:calc(48px + env(safe-area-inset-bottom));left:0;right:0;display:flex;justify-content:center;gap:12px;z-index:9;opacity:0;transition:opacity 1s;pointer-events:none}#nav.on{opacity:1;pointer-events:auto}button.nav{margin:0;padding:12px 26px;border-radius:30px;border:1px solid #f3e2b3;background:linear-gradient(135deg,#8d6b2a,#f3e2b3 50%,#b98f3c);color:#2a1d08;font-size:14px;font-weight:600;letter-spacing:.14em;box-shadow:0 6px 20px rgba(0,0,0,.45),0 0 18px rgba(243,226,179,.35)}#nx{animation:nudge 1.8s ease-in-out infinite}@keyframes nudge{50%{transform:translateX(4px)}}#dots.on{opacity:1}
@@ -117,10 +117,10 @@ chandelier:'<svg class="em" viewBox="0 0 100 100"><path d="M50 2v16" stroke="url
 const D=[{k:1},
 {c:'ch1',e:'dholki',w:'26 November 2026 | Evening',t:'Dholki',g:'Let the celebrations begin.',fx:'ripple,embers',col:'255,190,110'},
 {c:'ch2',e:'marigold',w:'27 November 2026 | 12:00 PM – 1:00 PM',t:'Haldi &amp; Mehndi',g:'A little sunshine before the big day.<span class="loc">At Home</span><span class="fun">Wear something you don’t mind turning yellow.</span>',fx:'petals,embers',col:'255,200,60'},
-{c:'ch3',e:'henna',w:'27 November 2026 | 7:00 PM – 10:00 PM',t:'Jago &amp; Ladies Sangeet',g:'An evening of music, laughter &amp; love.<span class="loc">At Home</span><span class="fun">Shy dancers will be gently encouraged.</span>',fx:'bokeh,embers',col:'120,235,185'},
-{c:'ch4',e:'dholki',w:'Saturday | 28 November 2026 | 7:00 PM – 10:00 PM',t:'Dholki Sangeet',g:'The music, the laughter, the memories.<span class="loc">At Home</span>',fx:'ripple,bokeh',col:'255,120,140'},
-{c:'ch5',e:'mandap',w:'Sunday | 29 November 2026 | 8:00 AM – 12:00 PM',t:'The Wedding',g:'Two hearts. One beautiful beginning.<span class="loc">Barat to Ludhiana</span><span class="fun">The Lavan won’t wait.</span><a class="map" href="https://maps.app.goo.gl/JqXfVzZYbBhfMhsRA?g_st=ac" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on Map</a>',fx:'petals,embers',col:'255,235,190'},
-{c:'ch6',e:'chandelier',w:'Monday | 30 November 2026 | 7:00 PM – 10:00 PM',t:'The Reception',g:'An evening to celebrate love.<span class="loc">Sohan Faram, Sirhind</span><span class="fun">Come hungry. Leave happy.</span><a class="map" href="https://maps.app.goo.gl/pUEuBWigo67qn6NA8" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on Map</a>',fx:'bokeh,embers',col:'255,226,190'},
+{c:'ch3',e:'henna',w:'27 November 2026 | 7:00 PM – 10:00 PM',t:'Jago &amp; Ladies Sangeet',g:'An evening of music, laughter &amp; love.<span class="loc">At Home</span><span class="fun">Shy dancers will be gently encouraged.</span>',fx:'bokeh,embers',col:'255,150,190'},
+{c:'ch4',e:'dholki',w:'Saturday | 28 November 2026 | 7:00 PM – 10:00 PM',t:'Dholki Sangeet',g:'The music, the laughter, the memories.<span class="loc">At Home</span>',fx:'ripple,bokeh',col:'140,255,170'},
+{c:'ch5',e:'mandap',w:'Sunday | 29 November 2026 | 8:00 AM – 12:00 PM',t:'The Wedding',g:'Two hearts. One beautiful beginning.<span class="loc">Barat to Ludhiana</span><span class="fun">The Lavan won’t wait.</span><a class="map" href="https://maps.app.goo.gl/JqXfVzZYbBhfMhsRA?g_st=ac" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on Map</a>',fx:'petals,embers',col:'255,215,225'},
+{c:'ch6',e:'chandelier',w:'Monday | 30 November 2026 | 7:00 PM – 10:00 PM',t:'The Reception',g:'An evening to celebrate love.<span class="loc">Sohan Faram, Sirhind</span><span class="fun">Come hungry. Leave happy.</span><a class="map" href="https://maps.app.goo.gl/pUEuBWigo67qn6NA8" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on Map</a>',fx:'bokeh,embers',col:'255,205,110'},
 {k:2}];
 const html=D.map(d=>{
  if(d.k===1)return`<div class="slide fin"><div class="panel paper"><div class="names foil" style="font-family:sans-serif;font-size:42px;margin:0 0 8px">ੴ</div><div class="small">With the blessings of our families,</div><div class="names foil">Dr. Balpreet Singh</div><div class="amp">&amp;</div><div class="names foil">Dr. Diljot Kaur</div><div class="small">invite you to celebrate their wedding.</div></div></div>`;
